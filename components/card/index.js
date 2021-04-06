@@ -10,6 +10,7 @@ import Typography from '@material-ui/core/Typography'
 import styles from '../../styles/Card.module.css'
 import Link from 'next/link'
 
+
 const UserCard = ({name, email, id, image}) => {
   const classes = useStyles()
   return (

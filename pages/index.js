@@ -8,26 +8,21 @@ export default function Home() {
   return (
     <Fragment>
       <Grid container alignItems={'center'}>
-        <Grid item xs={6} sm={6}>
-          <img className={styles.image} src='/detective.jpg' alt='detective doggo'/>
-        </Grid>
+ 
         <Grid container spacing={6} item xs={6} sm={6} direction={'column'} alignItems={'center'}>
-          <Grid item>
-            <Typography variant={'h4'}>
-              Welcome to Next level React with NEXT.js
-            </Typography>
-          </Grid>
+        
           <Grid item>
             <Button color="primary" variant="contained">
               <Link href="/users">
-                <a>Start Hacking</a>
+                <a>Show All Users List</a>
+                
               </Link>
             </Button>
-            <Button color="primary" variant="outlined">
+            {/* <Button color="primary" variant="outlined">
               <Link href="/posts">
                 <a>Start Exploring</a>
               </Link>
-            </Button>
+            </Button> */}
           </Grid>
         </Grid>
       </Grid>

@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Grid from '@material-ui/core/Grid'
 import styles from '../styles/Home.module.css'
 import { Button, Typography } from '@material-ui/core'
+import { getStaticProps } from './users'
 
 export default function Home() {
   return (
@@ -29,3 +30,7 @@ export default function Home() {
     </Fragment>
   )
 }
+
+// export function async getStaticProps(){
+
+// }

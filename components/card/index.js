@@ -12,7 +12,9 @@ import Link from 'next/link'
 
 //i am card compo
 
-const UserCard = ({name, email, id, image}) => {
+
+
+const UserCard = ({heading, url, subheading, _id}) => {
   const classes = useStyles()
   return (
     <Card className={styles.root}>
@@ -21,20 +23,20 @@ const UserCard = ({name, email, id, image}) => {
           component="img"
           alt="user image"
           height="200"
-          image={image}
+          image={url}
         />
         <CardContent>
           <Typography className={classes.text} gutterBottom variant="h5" component="h2">
-            {name}
+            {heading}
           </Typography>
           <Typography className={classes.text} variant="body2" color="textSecondary">
-            {email}
+            {subheading}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
         <Button size="small" color="primary">
-          <Link href={`/users/${id}`}>
+          <Link href={`/users/${_id}`}>
             <a>View Full Profile</a>
           </Link>
         </Button>
